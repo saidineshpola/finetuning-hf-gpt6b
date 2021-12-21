@@ -1,22 +1,8 @@
-# Finetune_GPTNEO_GPTJ6B
+# GPT_Neo_quotes_dataset
 
 ## Overview
+This Repo contains the code to generate a quotes dataset to fine tune GPT Neo.  It is used in the video tutorial [here](https://www.youtube.com/watch?v=07ppAKvOhqk&ab_channel=Blake)
 
-This repo contains code to download and convert GPT-J-6B into a Pytorch usable format.  Additionally, it contains code to fine-tune GPT-J-6B with a famous quotes dataset.
+## Dataset
 
-```/quotes_dataset``` contains the dataset properly formatted for fine-tuning. See repo for making this dataset [here](https://github.com/mallorbc/GPT_Neo_quotes_dataset)
-
-```/gptneo6B``` contains code to download and convert the model into a format to use with Pytorch
-
-```/finetuning_repo``` contains code orginally from the repo [here](https://github.com/Xirider/finetune-gpt2xl) that I have modified to work with GPT-J-6B
-
-## Walkthrough
-
-See the video [here](https://www.youtube.com/watch?v=fMgQVQGwnms&ab_channel=Blake) for a video tutorial
-
-1. First create a conda envrionment and enter the environment
-2. Run the ```./install_requirements.sh``` script
-3. First you want to download the model and get the model into a usable format using the ```/gptneo6B``` folder
-4. Then you want to copy the data from ```train.csv``` and ```validation.csv``` from ```/quotes_dataset``` to the ```/finetuning_repo``` folder
-5. Run the finetuning code with appropriate flags to fine tune the model
-
+Get the data for this code [here](https://www.kaggle.com/akmittal/quotes-dataset)
