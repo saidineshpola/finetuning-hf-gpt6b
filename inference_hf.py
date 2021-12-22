@@ -1,4 +1,4 @@
-os.system('pip install transformers')
+#os.system('pip install transformers')
 import time
 import torch
 from transformers import GPTJForCausalLM, GPT2Tokenizer
@@ -8,6 +8,8 @@ else:
     model =  GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", torch_dtype=torch.float16)
 from transformers import AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+tokenizer.save_pretrained("./gpt-j-6B")
+model.save_pretrained("./gpt-j-6B")
 input_text = "Hello my name is Blake and"
 input_ids = tokenizer.encode(str(input_text), return_tensors='pt').cuda()
 
