@@ -3,7 +3,7 @@
 pip install pytorch torchvision torchaudio cudatoolkit pytorch 
 pip install datasets
 #needed to convert model
-git clone https://github.com/kingoflolz/mesh-transformer-jax.git
+git clone https://github.com/saidineshpola/mesh-transformer-jax.git
 pip install -r mesh-transformer-jax/requirements.txt
 pip install mesh-transformer-jax/ jax==0.2.12 jaxlib -f https://storage.googleapis.com/jax-releases/jax_releases.html
 #correct version is required for understandable output
